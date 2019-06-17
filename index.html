@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>duet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <img src="bg1.jpg" id="background1" class="hidden">
+  <img src="bg2.jpg" id="background2" class="hidden">
+
+  <canvas id="canvas" width="800" height="550">
+    please update your browser
+    <br><br>
+    <li>your browser is too old for this content</li>
+    <br>or<br>
+    <li>your browser doesnot support this content</li>
+  </canvas>
+
+  <br>
+  <audio id="myaudio" src="Duet Soundtrack 1_ Theme from Duet.m4a" preload="auto" loop></audio>
+
+  <div id="movebuttons">
+    <span id="radios">
+      <span id="pone">
+        <input type="radio" name="playermode" id="single" value="singleplayer" checked>Single player mode
+      </span>
+      <span id="ptwo">
+        <input type="radio" name="playermode" id="double" value="doubleplayer">Two player challenge
+      </span>
+    </span>
+    <button id="btnleft"><img src="anticlock.png"></button>
+    &nbsp;
+    <button id="btnright"><img src="clock.png"></button>
+    <button id="audiobtn"><img src="soundin.png" id="audioimg"></button>
+    <button id="gamestate"><img src="play.png" id="gamestateimg"></button>
+  </div>
+  <BR>
+  <div>CAUTION: KEEP FOCUS OF CURSOR TO THE GAME SCREEN ELSE CONTROLS MIGHT NOT WORK</div>
+  <BR>
+  <div>IF SCREEN SIZE IS SMALL USE Ctrl + scroll on the mouse TO RESIZE AND VIEW FULL PAGE</div>
+  <script src="index.js"> </script>
+</body>
+
+</html>
